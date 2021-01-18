@@ -4,16 +4,29 @@
 }
 
 body {
-  background-color: black;
+  background-color: #000000;
   color: #FFC31E;
-  height: 100vh;
   display: flex;
+  height: 100vh;
   justify-content: center;
   font-size: 30px;
+  perspective:300px;
+  overflow: hidden;
 }
 
-main {
-  background-color: black;
+main{
+  background-color: red;
+  transform: rotateX(20deg);
+  display: flex;
+  flex-direction: column;
+  border: 3px cyan solid;
+  margin: 0px 100px;
+  text-align: justify;
+}
+
+
+/* main {
+  background-color: red;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -37,7 +50,7 @@ div {
   transform-style: preserve-3d;
   transform: rotateX(40deg);
   border: 1px solid black;
-  /*height: 900px;*/
+  height: 900px;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -53,4 +66,4 @@ h1 {
 
 p {
   text-align: justify;
-}
+} */
