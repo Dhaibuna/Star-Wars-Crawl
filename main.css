@@ -5,27 +5,51 @@
 
 body {
   background-color: black;
+  color: #FFC31E;
   height: 100vh;
   display: flex;
   justify-content: center;
+  font-size: 30px;
 }
 
 main {
-  background-color: red;
+  background-color: black;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   perspective: 300px;
+  transform-origin: 0% 100%;
+}
+
+@keyframes crawl {
+  from {
+    transform: translate3d(0) rotateX(40deg);
+  }
+
+  to {
+    transform: translate3d(0, -500px, -1000px)rotateX(40deg);
+  }
 }
 
 div {
-  transform-style: preserve-3d;
-  transform: rotateX(45deg);
+  transform: rotateX(40deg);
   border: 1px solid black;
+  height: 900px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  animation-name: crawl;
+  animation-delay: 0s;
+  animation-duration: 40s;
 }
 
 h1 {
   text-align: center;
+}
+
+p {
+  text-align: justify;
 }
