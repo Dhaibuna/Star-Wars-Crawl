@@ -25,7 +25,7 @@ main {
 
 @keyframes crawl {
   from {
-    transform: translate3d(0) rotateX(40deg);
+    transform: translate3d(0, -500px) rotateX(40deg);
   }
 
   to {
@@ -34,9 +34,10 @@ main {
 }
 
 div {
+  transform-style: preserve-3d;
   transform: rotateX(40deg);
   border: 1px solid black;
-  height: 900px;
+  /*height: 900px;*/
   background-color: black;
   display: flex;
   flex-direction: column;
