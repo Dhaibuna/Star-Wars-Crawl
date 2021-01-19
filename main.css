@@ -25,6 +25,7 @@ main{
 #crawling-text{
   animation-name: crawl;
   animation-duration: 70s;
+  animation-delay: 10s;
 }
 
 p{
@@ -36,7 +37,9 @@ h1, h2{
   text-align: center;
 }
 
-@keyframes crawl{
+
+
+/* @keyframes crawl{
   from {
     transform: translate3d(0,800px, 0);
   }
@@ -45,48 +48,5 @@ h1, h2{
     transform: translate3d(0, -900px, 0);
   }
   
-}
-
-
-/* main {
-  background-color: red;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  perspective: 300px;
-  transform-origin: 0% 100%;
-}
-
-@keyframes crawl {
-  from {
-    transform: translate3d(0, -500px) rotateX(40deg);
-  }
-
-  to {
-    transform: translate3d(0, -500px, -1000px)rotateX(40deg);
-  }
-}
-
-div {
-  transform-style: preserve-3d;
-  transform: rotateX(40deg);
-  border: 1px solid black;
-  height: 900px;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  width: 600px;
-  animation-name: crawl;
-  animation-delay: 0s;
-  animation-duration: 40s;
-}
-
-h1 {
-  text-align: center;
-}
-
-p {
-  text-align: justify;
 } */
+
