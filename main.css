@@ -18,6 +18,7 @@ body {
 }
 
 main{
+  background-color: red;
   margin-top: 100px;
   width: 950px;
   line-height: 1.5em;
@@ -37,27 +38,21 @@ main{
 #crawling-text{
   animation-name: crawl;
   animation-duration: 70s;
-  animation-delay: 2s;
-}
-
-p{
-  text-align: justify;
-  
-}
-
-h1, h2{
-  text-align: center;
-}
+  animation-delay: 20s;
+  background-color: aqua;
+  position:relative;
+  top: 300px;
 
 
- @keyframes crawl{
+ /* @keyframes crawl{
   from {
-    transform: translate3d(0,800px,0);
+    transform: translate3d(0,0,0);
   }
 
   to {
     transform: translate3d(0, -1000px,0);
+ 
   }
   
-} 
+}  */
 
