@@ -27,11 +27,11 @@ main{
 #fade{
   background-image: url(./img/star-wars-bg.png);
   position: absolute;
+  box-shadow: 2px 7px 28px 36px #000000;
   top:50px;
   height: 155px;
   width: 100%;
   z-index:100;
-
 }
 
 #crawling-text{
