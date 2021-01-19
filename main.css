@@ -4,46 +4,49 @@
 }
 
 body {
-  background-color: #000000;
+  background-image: url(./img/star-wars-bg.png);
   color: #E5b13A;
   font-size: 50px;
   font-weight: 900;
+  height:100vh;
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
-  perspective:300px;
   overflow: hidden;
 }
 
 main{
-  background-color: red;
-  transform: rotateX(40deg);
-  border: 3px cyan solid;
-  margin: 0px 95px;
+  margin-top: 100px;
+  width: 950px;
   line-height: 1.5em;
-  animation-name: crawl;
-  animation-delay: 0s;
-  animation-duration: 40s;
+  transform: perspective(200px) rotateX(30deg);
 }
 
-@keyframes crawl {
-  from {
-    transform: translate3d(0, -500px) rotateX(40deg);
-  }
-
-  to {
-    transform: translate3d(0, -500px, -1000px)rotateX(40deg);
-  }
+#crawling-text{
+  animation-name: crawl;
+  animation-duration: 70s;
 }
 
 p{
   text-align: justify;
+  
 }
 
 h1, h2{
   text-align: center;
 }
+
+@keyframes crawl{
+  from {
+    transform: translate3d(0,800px, 0);
+  }
+
+  to {
+    transform: translate3d(0, -900px, 0);
+  }
+  
+}
+
 
 /* main {
   background-color: red;
