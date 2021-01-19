@@ -5,11 +5,13 @@
 
 body {
   background-image: url(./img/star-wars-bg.png);
+  box-shadow: 0px 10px 10px black;
   color: #E5b13A;
   font-size: 50px;
   font-weight: 900;
   height:100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -22,9 +24,20 @@ main{
   transform: perspective(200px) rotateX(30deg);
 }
 
+#fade{
+  background-image: url(./img/star-wars-bg.png);
+  position: absolute;
+  top:50px;
+  height: 155px;
+  width: 100%;
+  z-index:100;
+
+}
+
 #crawling-text{
   animation-name: crawl;
   animation-duration: 70s;
+  animation-delay: 2s;
 }
 
 p{
@@ -36,57 +49,15 @@ h1, h2{
   text-align: center;
 }
 
-@keyframes crawl{
+
+ @keyframes crawl{
   from {
-    transform: translate3d(0,800px, 0);
+    transform: translate3d(0,800px,0);
   }
 
   to {
-    transform: translate3d(0, -900px, 0);
+    transform: translate3d(0, -1000px,0);
   }
   
-}
+} 
 
-
-/* main {
-  background-color: red;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  perspective: 300px;
-  transform-origin: 0% 100%;
-}
-
-@keyframes crawl {
-  from {
-    transform: translate3d(0, -500px) rotateX(40deg);
-  }
-
-  to {
-    transform: translate3d(0, -500px, -1000px)rotateX(40deg);
-  }
-}
-
-div {
-  transform-style: preserve-3d;
-  transform: rotateX(40deg);
-  border: 1px solid black;
-  height: 900px;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  width: 600px;
-  animation-name: crawl;
-  animation-delay: 0s;
-  animation-duration: 40s;
-}
-
-h1 {
-  text-align: center;
-}
-
-p {
-  text-align: justify;
-} */
