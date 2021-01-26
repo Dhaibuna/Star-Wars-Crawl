@@ -17,6 +17,30 @@ body {
   overflow: hidden;
 }
 
+
+/* Introduction text */
+
+#intro{ 
+  position: absolute;
+  font-family: 'Anonymous Pro', monospace;
+  font-size : 55px;
+  color: #155B6C; 
+  animation-name: intro;
+  animation-duration: 10s;
+  opacity: 0;
+}
+
+@keyframes intro{
+  from {
+      opacity: 1;
+  }
+ to {
+      opacity: 0;    
+  }
+} 
+
+/* Crawl animation  */
+
 main{
   margin-top: 100px;
   width: 950px;
@@ -37,9 +61,10 @@ main{
 #crawling-text{
   animation-name: crawl;
   animation-duration: 70s;
-  animation-delay: 20s;
+  animation-delay: 15s;
+  animation-timing-function: linear;
   position:relative;
-  top: 800px;
+  top: 850px;
   text-align: justify;
 }
 
