@@ -26,7 +26,7 @@ body {
   font-size : 55px;
   color: #155B6C; 
   animation-name: intro;
-  animation-duration: 10s;
+  animation-duration: 5s;
   opacity: 0;
 }
 
@@ -35,10 +35,39 @@ body {
       opacity: 1;
   }
  to {
-      opacity: 0;    
+      opacity: 1;    
   }
 } 
 
+/* Logo animation */
+
+#scaled-logo{
+  position: absolute;
+  z-index: 500;
+  animation-name: scaled-logo ;
+  animation-duration: 2s;
+  animation-delay:5s;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+
+@keyframes scaled-logo{
+  0% {
+      transform: scale(4);
+      opacity: 1;
+    }
+
+    50% {
+      transform: scale(2) ;
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+ 
 /* Crawl animation  */
 
 main{
@@ -61,7 +90,7 @@ main{
 #crawling-text{
   animation-name: crawl;
   animation-duration: 70s;
-  animation-delay: 15s;
+  animation-delay: 7s;
   animation-timing-function: linear;
   position:relative;
   top: 850px;
@@ -80,8 +109,6 @@ text-align:center
 
   to {
     transform: translate3d(0, -2000px,0);
- 
   }
-  
 }  
 
